@@ -10,11 +10,12 @@ public class Team {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         PrintWriter pw = new PrintWriter(System.out);
-        StringTokenizer stringTokenizer = new StringTokenizer(reader.readLine());
+
+        int numOfProblems = Integer.parseInt(reader.readLine());
 
         int problemsToImplement = 0;
-        int numOfProblems = Integer.parseInt(stringTokenizer.nextToken());
         for (int i = 0; i < numOfProblems; i++) {
+            StringTokenizer stringTokenizer = new StringTokenizer(reader.readLine());
             int petya = Integer.parseInt(stringTokenizer.nextToken());
             int vasya = Integer.parseInt(stringTokenizer.nextToken());
             int tonya = Integer.parseInt(stringTokenizer.nextToken());
@@ -24,6 +25,8 @@ public class Team {
             }
         }
         pw.print(problemsToImplement);
+        pw.flush();
         pw.close();
+        reader.close();
     }
 }
