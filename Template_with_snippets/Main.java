@@ -1,5 +1,3 @@
-package Template_with_snippets;
-
 // Problem:
 // Source:
 // Difficulty:
@@ -25,7 +23,10 @@ public class Main {
         br = new BufferedReader(new InputStreamReader(System.in));
         pw = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
 
-        solve();
+        int t = nextInt();
+        while(t > 0) {
+            solve();
+        }
 
         pw.close();
         br.close();
