@@ -1,3 +1,5 @@
+package Template_with_snippets;
+
 import java.io.*;
 import java.util.*;
 

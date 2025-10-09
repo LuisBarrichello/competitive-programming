@@ -23,6 +23,7 @@ public class Main {
         br = new BufferedReader(new InputStreamReader(System.in));
         pw = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
 
+        // if the problem give n case tests
         int t = nextInt();
         while(t > 0) {
             solve();
